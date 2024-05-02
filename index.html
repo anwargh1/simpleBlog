@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple blog</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+           
+            <div class="con">
+                        
+            <h1>Blog</h1>
+            <input type="checkbox" id="ch" onclick="toggle()">
+                <label for="ch" class="toggle"></label>   
+             
+        <div>
+           
+            <nav>
+                <ul id="tab">
+                    <li><a href="#" onclick="checkTabs('articles-tab')">Home</a></li>
+                    
+                    <li><a href="#" onclick="checkTabs('about-tab')">About</a></li>
+                    
+                </ul>
+                
+            </nav>
+    
+      </div>
+            </div>
+        </header>
+        <div id="articles-tab" class="articles tabs">
+            <h2>Article 1:</h2>
+            <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc libero est, aliquet vitae lacus a, fringilla auctor libero. Vivamus et dui pretium, efficitur velit in, pharetra justo. Vivamus nec lorem quis lectus commodo aliquet in eget velit. Nullam suscipit libero tortor, id sodales dolor faucibus ut. Phasellus tristique et libero non interdum. Aliquam dignissim tristique aliquam. In mattis tortor eget odio eleifend, vel pharetra nunc congue. Etiam nec sagittis velit. Suspendisse iaculis, arcu at tempus sodales, odio turpis mollis tortor, id tempor mauris ligula ac lectus. Donec efficitur sapien ut consectetur varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras a pharetra mi. Quisque non nulla ut lectus iaculis molestie. Cras purus mi, cursus porta scelerisque nec, ultrices a nulla. Aenean id magna at velit tempor ultricies.
+                Duis ultrices consequat tellus, sit amet commodo velit consectetur ut. Proin turpis nibh, ultricies sed ante in, tempus malesuada nunc. Nam dapibus sapien vitae tellus mattis fermentum. Praesent vel mi mi. Nunc eget nisl non neque maximus pretium. Cras sed ante mauris. Nam aliquam elit quis nibh vehicula, non ullamcorper nulla suscipit. Ut risus neque, hendrerit quis pharetra non, feugiat id ipsum. Duis ullamcorper turpis in metus ultricies volutpat. Aliquam facilisis facilisis ultrices. Aenean tortor dui, condimentum id orci at, facilisis luctus quam. Ut semper metus non bibendum congue. Curabitur non elit arcu.
+                Suspendisse eu tortor vitae arcu fringilla faucibus vitae at est. Nulla venenatis mi sit amet eros porta, sit amet pellentesque dui fringilla. Quisque nec ultrices diam, sed lacinia tellus. Quisque ut sem vitae sapien laoreet feugiat sed vitae lacus. Morbi nec luctus mi. Etiam dapibus laoreet dolor, sed accumsan tortor hendrerit eget. Etiam odio ligula, consequat eget imperdiet a, pulvinar ut turpis. Praesent euismod quam non lobortis tempor. Sed nec sollicitudin velit, vitae molestie augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vel risus et condimentum.</p>
+            <h2>Article 2:</h2>
+            <p id="p2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc libero est, aliquet vitae lacus a, fringilla auctor libero. Vivamus et dui pretium, efficitur velit in, pharetra justo. Vivamus nec lorem quis lectus commodo aliquet in eget velit. Nullam suscipit libero tortor, id sodales dolor faucibus ut. Phasellus tristique et libero non interdum. Aliquam dignissim tristique aliquam. In mattis tortor eget odio eleifend, vel pharetra nunc congue. Etiam nec sagittis velit. Suspendisse iaculis, arcu at tempus sodales, odio turpis mollis tortor, id tempor mauris ligula ac lectus. Donec efficitur sapien ut consectetur varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras a pharetra mi. Quisque non nulla ut lectus iaculis molestie. Cras purus mi, cursus porta scelerisque nec, ultrices a nulla. Aenean id magna at velit tempor ultricies.
+                Duis ultrices consequat tellus, sit amet commodo velit consectetur ut. Proin turpis nibh, ultricies sed ante in, tempus malesuada nunc. Nam dapibus sapien vitae tellus mattis fermentum. Praesent vel mi mi. Nunc eget nisl non neque maximus pretium. Cras sed ante mauris. Nam aliquam elit quis nibh vehicula, non ullamcorper nulla suscipit. Ut risus neque, hendrerit quis pharetra non, feugiat id ipsum. Duis ullamcorper turpis in metus ultricies volutpat. Aliquam facilisis facilisis ultrices. Aenean tortor dui, condimentum id orci at, facilisis luctus quam. Ut semper metus non bibendum congue. Curabitur non elit arcu.     
+                Suspendisse eu tortor vitae arcu fringilla faucibus vitae at est. Nulla venenatis mi sit amet eros porta, sit amet pellentesque dui fringilla. Quisque nec ultrices diam, sed lacinia tellus. Quisque ut sem vitae sapien laoreet feugiat sed vitae lacus. Morbi nec luctus mi. Etiam dapibus laoreet dolor, sed accumsan tortor hendrerit eget. Etiam odio ligula, consequat eget imperdiet a, pulvinar ut turpis. Praesent euismod quam non lobortis tempor. Sed nec sollicitudin velit, vitae molestie augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vel risus et condimentum.
+            </p>
+        </div>
+        <div id="about-tab" class="about tabs">
+            <h2>About:</h2>
+            <p id="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc libero est, aliquet vitae lacus a, fringilla auctor libero. Vivamus et dui pretium, efficitur velit in, pharetra justo. Vivamus nec lorem quis lectus commodo aliquet in eget velit. Nullam suscipit libero tortor, id sodales dolor faucibus ut. Phasellus tristique et libero non interdum. Aliquam dignissim tristique aliquam. In mattis tortor eget odio eleifend, vel pharetra nunc congue. Etiam nec sagittis velit. Suspendisse iaculis, arcu at tempus sodales, odio turpis mollis tortor, id tempor mauris ligula ac lectus. Donec efficitur sapien ut consectetur varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras a pharetra mi. Quisque non nulla ut lectus iaculis molestie. Cras purus mi, cursus porta scelerisque nec, ultrices a nulla. Aenean id magna at velit tempor ultricies.
+                Duis ultrices consequat tellus, sit amet commodo velit consectetur ut. Proin turpis nibh, ultricies sed ante in, tempus malesuada nunc. Nam dapibus sapien vitae tellus mattis fermentum. Praesent vel mi mi. Nunc eget nisl non neque maximus pretium. Cras sed ante mauris. Nam aliquam elit quis nibh vehicula, non ullamcorper nulla suscipit. Ut risus neque, hendrerit quis pharetra non, feugiat id ipsum. Duis ullamcorper turpis in metus ultricies volutpat. Aliquam facilisis facilisis ultrices. Aenean tortor dui, condimentum id orci at, facilisis luctus quam. Ut semper metus non bibendum congue. Curabitur non elit arcu.               
+                Suspendisse eu tortor vitae arcu fringilla faucibus vitae at est. Nulla venenatis mi sit amet eros porta, sit amet pellentesque dui fringilla. Quisque nec ultrices diam, sed lacinia tellus. Quisque ut sem vitae sapien laoreet feugiat sed vitae lacus. Morbi nec luctus mi. Etiam dapibus laoreet dolor, sed accumsan tortor hendrerit eget. Etiam odio ligula, consequat eget imperdiet a, pulvinar ut turpis. Praesent euismod quam non lobortis tempor. Sed nec sollicitudin velit, vitae molestie augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor vel risus et condimentum.               
+                Pellentesque mi eros, tincidunt a nibh at, tristique venenatis sem. Morbi lacinia turpis sit amet convallis malesuada. Phasellus aliquam leo metus. Phasellus tempus sapien vitae lacus maximus, nec dignissim sapien ornare. Integer vestibulum ultrices velit et mollis. Nulla sollicitudin hendrerit nunc eu porttitor. Nullam lobortis tristique est, nec eleifend metus lacinia sit amet.              
+                Ut id magna vitae justo pulvinar eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Vivamus fringilla purus sit amet maximus accumsan. Sed elementum elit ac sagittis euismod. Suspendisse tristique dolor id nunc fringilla dapibus. In ac sem convallis, sagittis lectus accumsan, ornare ipsum. Nunc viverra ac diam sed interdum. In viverra mi vehicula, porta ex vitae, porttitor leo. Proin enim lectus, cursus sed nulla in, fringilla vulputate enim. Pellentesque porta blandit fermentum.</p>
+        </div>
+
+        <script>
+            let key=false;
+            function toggle() {
+                key = !key;
+                let p1 = document.getElementById('p1');
+                let p2 = document.getElementById('p2');
+                let header = document.getElementById('header');
+                let about = document.getElementById('about');
+                let article1 = document.getElementsByTagName('h2');
+                
+                
+                if (key) {
+                    document.body.classList.remove("light");
+                    document.body.classList.add("dark");
+                    p1.style.backgroundColor = 'black';
+                    p2.style.backgroundColor = 'black';
+                    p1.style.color = 'white';
+                    p2.style.color = 'white';
+                    
+                    about.style.backgroundColor = 'black';
+                    header.style.backgroundColor = 'white';
+                //article1.style.color='white';
+                    for (let i = 0; i < article1.length; i++) {
+                        let article = article1[i];
+                        article.style.color = 'white'; 
+                    }
+                
+                } else {
+                    document.body.classList.remove("dark");
+                    document.body.classList.add("light");
+                    p1.style.backgroundColor = ''; 
+                    p2.style.backgroundColor = ''; 
+                    about.style.backgroundColor = ''; 
+                    header.style.backgroundColor = ''; 
+                    for (let i = 0; i < article1.length; i++) {
+                        let article = article1[i];
+                        article.style.color = ''; 
+                    }
+                    
+                }
+            }
+            let tabs=document.getElementsByClassName("tabs");
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+
+            function checkTabs(tab) {
+  
+                for (let i = 0; i < tabs.length; i++) {
+                    tabs[i].style.display = "none";
+                }
+
+                document.getElementById(tab).style.display = "block";
+            }
+        </script>
+
+    </body>
+
+
+</html>
